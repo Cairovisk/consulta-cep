@@ -1,4 +1,4 @@
-# loja-usados
+# Consulta-cep
 
 ## Project setup
 ```
