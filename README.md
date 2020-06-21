@@ -2,6 +2,8 @@
 
 ## Project setup
 ```
+npm install npm -g (If no npm installed in command line)
+```
 npm install
 ```
 
@@ -9,16 +11,7 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
+In your browser access localhost:8080 to run the application in local server
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
