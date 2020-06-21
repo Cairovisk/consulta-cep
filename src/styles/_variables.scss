@@ -1,0 +1,180 @@
+//Font weight
+$thin: 200;
+$light: 300;
+$regular: normal;
+$medium: 500;
+$semibold: 600;
+$bold: bold;
+
+//Font
+$font: Montserrat;
+
+//Colors
+$white-primary: #FFFFFF;
+$white-secondary: #F2F2F2;
+$pink-white: #FDF8F9;
+$pink-light: #FFE2F1;
+$pink-primary: #FFBFE1;
+$purple: #9F00F6;
+$red-primary: #DF4E5A;
+$red-light: #E0A1A6;
+$black: #000000;
+$gray: #757575;
+
+body {
+	background: $white-secondary;
+	font-family: $font;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media (min-width: 1530px) {
+	.container {
+		max-width: 1470px;
+	}
+}
+@media (min-width: 1530px) {
+	.container, .container-sm, .container-md, .container-lg, .container-xl {
+		max-width: 1470px;
+	}
+}
+
+.section-title {
+	font-size: 36px;
+	font-weight: $semibold;
+	color: $black;
+	text-align: center;
+	margin-bottom: 78px;
+	position: relative;
+
+	&::before {
+		margin: 0 auto;
+		content: '';
+		display: block;
+		min-height: 2px;
+		width: 167px;
+		position: relative;
+		top: -24px;
+		background: $black;
+	}
+
+	@media (max-width: 1200px) {
+		margin-bottom: 49px;
+		font-size: 26px;
+	}
+}
+
+.content-title {
+	font-weight: $semibold;
+	color: $black;
+	font-size: 28px;
+	margin-bottom: 49px;
+	position: relative;
+
+	&::before {
+		content: '';
+		display: block;
+		min-height: 2px;
+		width: 100px;
+		position: absolute;
+		bottom: -16px;
+		background: $black;
+	}
+
+	@media (max-width: 1530px) {
+		font-size: 24px;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 20px;
+	}
+}
+
+.content-description {
+	font-weight: $medium;
+	color: $black;
+	font-size: 18px;
+	line-height: 28px;
+
+	@media (max-width: 1530px) {
+		font-size: 16px;
+		line-height: auto;
+	}
+}
+
+.btn {
+	text-decoration: none;
+	border: none;
+	border-radius: 10px;
+	font-weight: $semibold;
+	font-size: 18px;
+	color: $white-primary;
+	height: 53px;
+	padding: 0 30px;
+	display: flex;
+	align-items: center;
+	background: inherit;
+	border: 1px solid $black;
+	transition: 0.2s;
+	cursor: pointer;
+	display: inline-flex;
+
+	@media (max-width: 1200px) {
+		font-size: 16px;
+	}
+
+	&:hover {
+		transition: 0.2s;
+		background: $white-primary;
+		color: $black;
+		border: 1px solid $black;
+	}
+
+	&.btn-primary {
+		background: $white-primary;
+		border: 1px solid $black;
+		color: $black;
+		transition: 0.2s;
+
+		&:hover {
+			transition: 0.2s;
+			background: $black;
+			color: $white-primary;
+			border: 1px solid $black;
+		}
+	}
+
+	&.h-42 {
+		height: 42px;
+	}
+
+	&.h-58 {
+		height: 58px;
+	}
+
+	&:focus {
+		border: none;
+		box-shadow: none;
+		outline: none;
+	}
+}
