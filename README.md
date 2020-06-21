@@ -3,7 +3,7 @@
 ## Project setup
 ```
 npm install npm -g (If no npm installed in command line)
-```
+
 npm install
 ```
 
