@@ -10,7 +10,7 @@ npm install
 ### Compiles and hot-reloads for development
 ```
 npm run serve
-```
+
 In your browser access localhost:8080 to run the application in local server
 ```
 ### Customize configuration
